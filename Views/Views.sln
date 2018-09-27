@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewsWPF", "ViewsWPF\ViewsWPF.csproj", "{F5B956E7-9786-42D4-8C9B-72E086150509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{3BA24386-14E7-4CC9-8125-9632A575302B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{39AC6060-7349-45D6-83A9-88726977C386}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B956E7-9786-42D4-8C9B-72E086150509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B956E7-9786-42D4-8C9B-72E086150509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B956E7-9786-42D4-8C9B-72E086150509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B956E7-9786-42D4-8C9B-72E086150509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA24386-14E7-4CC9-8125-9632A575302B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA24386-14E7-4CC9-8125-9632A575302B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA24386-14E7-4CC9-8125-9632A575302B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA24386-14E7-4CC9-8125-9632A575302B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AC6060-7349-45D6-83A9-88726977C386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AC6060-7349-45D6-83A9-88726977C386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AC6060-7349-45D6-83A9-88726977C386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AC6060-7349-45D6-83A9-88726977C386}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F33C2CD4-BE79-48FE-9AE3-3BDAA69F51A7}
+	EndGlobalSection
+EndGlobal

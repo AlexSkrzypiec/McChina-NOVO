@@ -1,0 +1,59 @@
+﻿<Window x:Class="ViewsWPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewsWPF"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="/ViewsWPF;component/Imagens/McChina.jpg" Stretch="UniformToFill"/>
+        </StackPanel.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <TextBlock Text="Login" Margin="0 100 0 0" Foreground="White" VerticalAlignment="Center" FontWeight="Bold"/>
+                <TextBox x:Name="login" Margin="0 10 0 0" Padding="2" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <TextBlock Text="Senha" Foreground="White" VerticalAlignment="Center" FontWeight="Bold"/>
+                <PasswordBox x:Name="senhalogin" Margin="0 0 0 0" Padding="2" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <Button x:Name="entrar" Margin="50 10 50 10" Grid.Column="0" Content="Login" FontWeight="Bold" Click="entrar_Click"/>
+                <Button x:Name="cancela" Margin="50 0 50 10" Grid.Column="0" Content="Canelar" FontWeight="Bold" Click="cancela_Click"/>
+                <Button x:Name="reg" Margin="50 0 50 10" Grid.Column="0" Content="Registro" FontWeight="Bold" Click="reg_Click"/>
+            </StackPanel>
+        </Grid>
+
+        </StackPanel>
+</Window>

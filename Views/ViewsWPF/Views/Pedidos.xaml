@@ -1,0 +1,117 @@
+﻿<Window x:Class="ViewsWPF.Views.Pedidos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewsWPF.Views"
+        mc:Ignorable="d"
+        Title="Pedidos" Height="450" Width="800">
+    <Border Padding="0">
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/ViewsWPF;component/Imagens/McChina.jpg" Stretch="UniformToFill"/>
+            </StackPanel.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="FinishButton" Margin="10 20 10 10" Grid.Column="0" Content="Finalizar Pedido" FontWeight="Bold" HorizontalAlignment="Center" Height="50" Width="100" Click="FinishButton_Click"/>
+                <Button x:Name="ResetButton" Click="ResetButton_Click" Margin="10 20 10 10" Grid.Column="1" Content="Limpar" FontWeight="Bold" HorizontalAlignment="Center" Height="50" Width="100"/>
+                <Button x:Name="SairButton" Margin="10 20 10 10" Grid.Column="2" Content="Sair" FontWeight="Bold" Grid.ColumnSpan="2" Click="SairButton_Click" HorizontalAlignment="Center" Height="50" Width="100"/>
+
+            </Grid>
+            <Grid>
+                <TextBlock Text="Dados do pedido:" FontWeight="Bold" Margin="10 10" Foreground="White"/>
+            </Grid>
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Nome do Cliente" Foreground="White" Margin="10 30 10 0" FontWeight="Bold"/>
+                    <TextBox x:Name="NomeCampo" Margin="10 20 10 0" Padding="2"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Data do Pedido" Foreground="White" FontWeight="Bold" Margin="10 30 10 0"/>
+                    <TextBox x:Name="DataCampo" Padding="2" Margin="10 20 10 0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Margin="10 30 10 0" Text="Tipo de Pedido" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 20 10 0" Padding="3" x:Name="TipoPedido">
+                        <ListBoxItem Content="Viagem"/>
+                        <ListBoxItem Content="Balcão"/>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="0 10 0 0">
+                    <TextBlock Margin="10 0 0 10" Text="Mc China Hamburguers" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 0 10 0" Padding="3" x:Name="TipoHamburguer">
+                        <ListBoxItem Content="McChina Simple"/>
+                        <ListBoxItem Content="McChina Double"/>
+                        <ListBoxItem Content="McChina Dog Meat"/>
+                        <ListBoxItem Content="McChina Cat Meat"/>
+                        <ListBoxItem Content="McChina Weird Meat"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="0 10 0 0">
+                    <TextBlock Margin="10 0 0 10" Text="McChina Fries" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 0 10 0" Padding="3" x:Name="TipoBatata">
+                        <ListBoxItem Content="McChina Fries"/>
+                        <ListBoxItem Content="McChina Fries Mega"/>
+                        <ListBoxItem Content="McChina Fries With Bugs"/>
+                        <ListBoxItem Content="McChina Fries With More Bugs"/>
+                        <ListBoxItem Content="McChina Just One Frie"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Margin="0 10 0 0">
+                    <TextBlock Margin="10 0 0 10" Text="McChina Drinks" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 0 10 0" Padding="3" x:Name="TipoBebida">
+                        <ListBoxItem Content="McChina Coke"/>
+                        <ListBoxItem Content="McChina Coke With Coke"/>
+                        <ListBoxItem Content="McChina Vodka"/>
+                        <ListBoxItem Content="McChina Fake Vodka"/>
+                        <ListBoxItem Content="McChina Pickle Juice"/>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="0 10 0 0">
+                    <TextBlock Margin="10 0 0 10" Text="McChina Desserts" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 0 10 0" Padding="3" x:Name="TipoSobremesa">
+                        <ListBoxItem Content="McChina Mousse do Welitão"/>
+                        <ListBoxItem Content="McChina Milk Goat Ice Cream"/>
+                        <ListBoxItem Content="McChina Deep Fried Candy Bars"/>
+                        <ListBoxItem Content="McChina Chocolate Crickets Covered"/>
+                        <ListBoxItem Content="McChina Wasabi Icecream"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="0 10 0 0">
+                    <TextBlock Margin="10 0 0 10" Text="McChina Plus" Foreground="White" FontWeight="Bold"/>
+                    <ComboBox Margin="10 0 10 0" Padding="3" x:Name="TipoComida">
+                        <ListBoxItem Content="McChina Weird Food"/>
+                        <ListBoxItem Content="McChina Weird Food Mega"/>
+                        <ListBoxItem Content="McChina Deep Weird Food"/>
+                        <ListBoxItem Content="McChina Most Weird Food"/>
+                        <ListBoxItem Content="Big Mac"/>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
