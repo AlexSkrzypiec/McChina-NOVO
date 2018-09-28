@@ -19,7 +19,7 @@ namespace Modelos
         public string TipoPedido { get; set; }
         public int UsuarioIdUsuario { get; set; }
 
-        public virtual ICollection<Usuario> Usuario { get; set; }
+        public virtual ICollection<Usuario> IdUsuario { get; set; }
 
     }
 }

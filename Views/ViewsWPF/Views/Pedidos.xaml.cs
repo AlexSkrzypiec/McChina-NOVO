@@ -24,6 +24,12 @@ namespace ViewsWPF.Views
         public Pedidos()
         {
             InitializeComponent();
+            //o que mostrar
+            TipoHamburguer.DisplayMemberPath = "NomeProduto";
+
+            // o que retornar (chave do item selecionado)
+            TipoHamburguer.SelectedValuePath = "IdProduto";
+            //TipoHamburguer.ItemsSource = ProdutosController.ListarHamburgueres();
         }
 
         private void FinishButton_Click(object sender, RoutedEventArgs e)
@@ -37,7 +43,17 @@ namespace ViewsWPF.Views
             PedidoController pednovo = new PedidoController();
 
             pednovo.Adicionar(ped);
-            
+
+            /*
+             * PedidoProdutos ppHamburguer = new PedidoProduto();
+             * ppHamburguer.Pedido_IdPedido = ped.IdPedido;
+             * ppHamburguer.Produtos_IdProduto = int.Parse(TipoHamburguer.SelectedValue);
+             * 
+             * PedidoProdutosController ppc = new PedidoProdutosController();
+             * ppc.Adicionar(ppHamburguer);
+             * 
+             * */
+
             MessageBox.Show("Pedido cadastrado");
 
             NomeCampo.Clear();
